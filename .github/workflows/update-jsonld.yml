@@ -1,0 +1,46 @@
+name: Update JSON-LD Data Layer
+
+on:
+  schedule:
+    - cron: "0 3 * * *"   # jeden Tag um 03:00 Uhr
+  workflow_dispatch:      # manuell auslösbar
+
+jobs:
+  update-jsonld:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Install jq
+        run: sudo apt-get install jq -y
+
+      - name: Update dateModified in index.json
+        run: |
+          jq '.dateModified = now | strftime("%Y-%m-%d")' jsonld/index.json > jsonld/index.tmp
+          mv jsonld/index.tmp jsonld/index.json
+
+      - name: Update generated date in sitemap.json
+        run: |
+          jq '.generated = now | strftime("%Y-%m-%d")' jsonld/sitemap.json > jsonld/sitemap.tmp
+          mv jsonld/sitemap.tmp jsonld/sitemap.json
+
+      - name: Create minified index.min.json
+        run: |
+          jq -c '.' jsonld/index.json > jsonld/index.min.json
+
+      - name: Create minified sitemap.min.json
+        run: |
+          jq -c '.' jsonld/sitemap.json > jsonld/sitemap.min.json
+
+      - name: Commit changes
+        run: |
+          git config --local user.name "github-actions"
+          git config --local user.email "github-actions@github.com"
+          git add jsonld/index.json jsonld/index.min.json jsonld/sitemap.json jsonld/sitemap.min.json
+          git commit -m "Auto-update JSON-LD data layer" || echo "No changes to commit"
+
+      - name: Push changes
+        run: |
+          git push
