@@ -8,6 +8,8 @@ on:
 jobs:
   update-jsonld:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Diese Berechtigung ist notwendig, um per 'git push' Commits zu pushen
 
     steps:
       - name: Checkout Repository
@@ -19,14 +21,12 @@ jobs:
       # index.json – dateModified setzen
       - name: Update dateModified in index.json
         run: |
-          # Korrigiert: Nutzt jq's eingebaute Zeitfunktion 'now'
           jq '.dateModified = (now | strftime("%Y-%m-%d"))' jsonld/index.json > jsonld/index.tmp
           mv jsonld/index.tmp jsonld/index.json
 
       # sitemap.json – generated setzen
       - name: Update generated date in sitemap.json
         run: |
-          # Korrigiert: Nutzt jq's eingebaute Zeitfunktion 'now'
           jq '.generated = (now | strftime("%Y-%m-%d"))' jsonld/sitemap.json > jsonld/sitemap.tmp
           mv jsonld/sitemap.tmp jsonld/sitemap.json
 
