@@ -48,4 +48,4 @@ jobs:
           git commit -m "Auto-update JSON-LD metadata" || echo "No changes to commit"
 
       - name: Push changes
-        run: git push --force # Behebt den aktuellen Fehler!
+        run: git push --force # <-- Der entscheidende Befehl zur Behebung dieses Fehlers
