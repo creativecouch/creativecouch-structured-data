@@ -1,0 +1,52 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      "name": "Professionelle Website für kleine Unternehmen: Warum sie unverzichtbar ist | Allgemein",
+      "inLanguage": "de",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Wie lange dauert es, eine neue Website zu erstellen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Eine responsive Website mit modernem Webdesign dauert in der Regel einige Wochen. Die Dauer hängt davon ab, wie viele Seiten benötigt werden und welche Funktionen integriert werden sollen. WordPress-Websites lassen sich oft schneller realisieren als komplexe Individual-Programmierungen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kann ich meine Website selbst erstellen oder brauche ich eine Agentur?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Baukastensysteme wie Wix oder Squarespace eignen sich für einfache Seiten oder den Einstieg. Wenn es um ein professionelles Erscheinungsbild, individuelle Gestaltung und nachhaltiges SEO geht, ist eine Agentur die bessere Wahl."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie oft sollte ich meine Website aktualisieren?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Inhaltliche Updates sind wichtig: ein Blog oder News-Bereich signalisiert Aktualität und verbessert dein Ranking. Auch das Design sollte regelmäßig überprüft werden – spätestens nach einigen Jahren wirkt eine Website sonst veraltet. Technische Updates (z. B. WordPress, Plugins) sollten laufend eingespielt werden."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was ist der Unterschied zwischen responsive und mobiler Website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Responsive Design bedeutet, dass sich deine Website automatisch an jede Bildschirmgröße anpasst – egal ob Smartphone, Tablet oder Desktop. Eine separate mobile Website ist heute nicht mehr notwendig, da modernes Webdesign alle Geräte abdeckt."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Brauche ich als kleines Unternehmen wirklich SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja! Gerade für kleine und mittlere Unternehmen ist lokale Suchmaschinenoptimierung entscheidend. Es geht nicht darum, gegen große Konzerne anzutreten, sondern in deiner Region bei Suchanfragen wie „Bäckerei in der Nähe“ oder „Handwerker [Stadtname]“ sichtbar zu sein."
+          }
+        }
+      ]
+    }
+  ]
+}

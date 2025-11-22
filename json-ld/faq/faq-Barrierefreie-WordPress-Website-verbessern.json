@@ -1,0 +1,44 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      "name": "Barrierefreie WordPress-Website verbessern | Allgemein",
+      "inLanguage": "de",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Muss meine Website wirklich barrierefrei sein?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wenn du einen Online-Shop, digitale Dienstleistungen oder eine kommerzielle Plattform anbietest, dann sehr wahrscheinlich: Ja. Das BFSG verpflichtet ab 2025 viele Anbieter zur Barrierefreiheit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was passiert, wenn ich nicht barrierefrei bin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Du riskierst rechtliche Konsequenzen und Ausschluss von öffentlichen Ausschreibungen. Und du verschenkst SEO-Potenzial – weil Google barrierefreie Seiten bevorzugt."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Gilt das auch für Einzelunternehmer oder Freelancer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Je nach Branche und Dienstleistungsangebot: oft ja. Selbst wenn keine gesetzliche Pflicht besteht, lohnt sich Barrierefreiheit durch die Vorteile in UX und SEO."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ist das technisch aufwendig?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Barrierefreiheit ist keine One-Click-Lösung – auch nicht mit WordPress. Selbst moderne Themes können schlecht strukturiertes HTML enthalten oder wichtige semantische Elemente vernachlässigen. Eine wirklich barrierefreie Website erfordert immer eine individuelle Analyse und oft auch tiefere Eingriffe in Theme, Plugins und Inhalte. Pauschale Plugin-Empfehlungen helfen da nur begrenzt weiter."
+          }
+        }
+      ]
+    }
+  ]
+}

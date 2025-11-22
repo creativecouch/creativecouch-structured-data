@@ -1,0 +1,52 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      "name": "Digitale Sichtbarkeit für Mittelhessen – so punktest du lokal und fair | Allgemein",
+      "inLanguage": "de",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Was ist GEO eigentlich?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GEO, kurz für Generative Engine Optimization, sorgt dafür, dass KI-Systeme deine Marke korrekt verstehen und darstellen – also nicht nur, ob du sichtbar bist, sondern wie."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Worin unterscheidet sich GEO von klassischem Local SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Local SEO optimiert für Google Maps und lokale Suchergebnisse, GEO erweitert das um KI-Systeme, die Websites lesen, kontextualisieren und zitieren."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie merke ich, ob mein Unternehmen in KI-Ergebnissen richtig auftaucht?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Frag ChatGPT, Perplexity oder Gemini direkt nach deinem Unternehmen. Wenn du dich in der Antwort wiedererkennst – gut. Wenn nicht, ist das ein Hinweis auf fehlende Daten oder unklare Signale."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kann ich fair und lokal sichtbar sein, ohne City-Landingpages?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Authentische Projekte, Presseartikel und echte Kundenstimmen aus der Region sind nachhaltiger als künstlich erzeugte Stadtseiten."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was bringt mir ein GEO-Audit konkret?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ein GEO-Audit zeigt, wie gut dein Content und deine Daten von KI-Systemen erkannt werden – und wo du technisch oder semantisch nachbessern kannst."
+          }
+        }
+      ]
+    }
+  ]
+}

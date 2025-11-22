@@ -1,0 +1,44 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      "name": "KI-Charta: So nutzt dein Unternehmen KI mit Haltung | Allgemein",
+      "inLanguage": "de",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Was ist eine KI-Charta?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ein Leitdokument, das festlegt, wie KI im Unternehmen eingesetzt wird – mit klaren Zielen, Grenzen und Verantwortlichkeiten."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ist eine KI-Charta Pflicht?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Noch nicht gesetzlich, aber bei Ausschreibungen oder Partnerschaften zunehmend ein Vorteil. Sie signalisiert Professionalität, Compliance und technisches Verantwortungsbewusstsein."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie oft sollte sie aktualisiert werden?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mindestens alle 6 Monate oder bei neuen Tools, Teams oder Prozessen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wer sollte sie entwickeln?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Am besten ein interdisziplinäres Team aus Geschäftsführung, Kommunikation, IT und Datenschutz – gemeinsam mit externer Beratung, wenn gewünscht."
+          }
+        }
+      ]
+    }
+  ]
+}

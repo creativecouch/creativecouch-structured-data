@@ -1,0 +1,76 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      "name": "WordPress 7.0 | Allgemein",
+      "inLanguage": "de",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Wie können Unternehmen ihre Website auf WordPress 7.0 vorbereiten?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Unternehmen sollten bereits jetzt Themes und Plugins auf Aktualität prüfen, eine Staging-Umgebung einrichten, Hosting auf PHP 8.2+ umstellen und Barrierefreiheit gezielt verbessern."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Welche Risiken gibt es beim Update auf WordPress 7.0?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Risiken bestehen vor allem bei alten Themes und Plugins, die nicht kompatibel sind. Auch komplexe Websites wie Shops können beim Umstieg auf WordPress 7.0 Anpassungen benötigen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was bedeutet WordPress 7.0 für Barrierefreiheit und das BFSG 2025/26?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "WordPress 7.0 dürfte neue Standards für Barrierefreiheit setzen, um die EU-Vorgaben und das BFSG einzuhalten – darunter bessere Screenreader-Kompatibilität und optimierte Tastatur-Navigation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Welche Sicherheits-Features sind in WordPress 7.0 geplant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Diskutiert werden ein integriertes Consent-Management für Cookies und Tracking sowie zusätzliche Sicherheitsoptionen in der REST-API, etwa erweiterte Authentifizierung."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie wirkt sich WordPress 7.0 auf Performance und Ladezeiten aus?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Durch ein geplantes Core-Caching-System und optimierten Code soll WordPress 7.0 schnellere Ladezeiten erreichen und die Core Web Vitals verbessern."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was ändert sich beim Block-Editor in WordPress 7.0?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Der Gutenberg-Editor entwickelt sich mit WordPress 7.0 weiter zum Full Site Editing 2.0. Damit lassen sich Layouts, Styles und Vorlagen noch flexibler gestalten – klassische Themes verlieren an Bedeutung."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Welche neuen Funktionen bringt WordPress 7.0?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "WordPress 7.0 soll vor allem Full Site Editing 2.0, ein verbessertes Core-Caching, native PHP-9-Unterstützung sowie neue Tools für Sicherheit und Barrierefreiheit bringen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wann erscheint WordPress 7.0 offiziell?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ein genaues Release-Datum für WordPress 7.0 steht noch nicht fest. Nach aktuellem Stand wird das Update im Laufe des Jahres 2026 erwartet, voraussichtlich im ersten Halbjahr."
+          }
+        }
+      ]
+    }
+  ]
+}
