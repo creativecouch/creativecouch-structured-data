@@ -13,7 +13,9 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4 # Neueste Version
+        with:
+          fetch-depth: 0 # Holt die gesamte Historie, verhindert Konflikte beim Push
 
       - name: Install jq
         run: sudo apt-get install jq -y
@@ -48,4 +50,5 @@ jobs:
           git commit -m "Auto-update JSON-LD metadata" || echo "No changes to commit"
 
       - name: Push changes
-        run: git push --force # <-- Der entscheidende Befehl zur Behebung dieses Fehlers
+        # Expliziter Push auf den main-Branch mit Force
+        run: git push origin main --force
