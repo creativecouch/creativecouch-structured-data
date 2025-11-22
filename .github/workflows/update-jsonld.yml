@@ -9,24 +9,25 @@ jobs:
   update-jsonld:
     runs-on: ubuntu-latest
     permissions:
-      contents: write 
+      contents: write # Für den Push benötigt
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4 # Neueste Version
+        # Verwende v4 und hole die gesamte Historie
+        uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Holt die gesamte Historie, verhindert Konflikte beim Push
+          fetch-depth: 0 
 
       - name: Install jq
         run: sudo apt-get install jq -y
 
-      # index.json – dateModified setzen
+      # index.json – dateModified setzen (Korrigierte Syntax)
       - name: Update dateModified in index.json
         run: |
           jq '.dateModified = (now | strftime("%Y-%m-%d"))' jsonld/index.json > jsonld/index.tmp
           mv jsonld/index.tmp jsonld/index.json
 
-      # sitemap.json – generated setzen
+      # sitemap.json – generated setzen (Korrigierte Syntax)
       - name: Update generated date in sitemap.json
         run: |
           jq '.generated = (now | strftime("%Y-%m-%d"))' jsonld/sitemap.json > jsonld/sitemap.tmp
@@ -49,6 +50,9 @@ jobs:
           git add jsonld/index.json jsonld/sitemap.json jsonld/index.min.json jsonld/sitemap.min.json
           git commit -m "Auto-update JSON-LD metadata" || echo "No changes to commit"
 
-      - name: Push changes
-        # Expliziter Push auf den main-Branch mit Force
-        run: git push origin main --force
+      - name: Push changes (Pull & Push)
+        run: |
+          # 1. Pullt die neuesten Remote-Änderungen und rebase die lokalen Commits
+          git pull --rebase
+          # 2. Push ohne --force, da die Historie nun aktuell ist
+          git push
