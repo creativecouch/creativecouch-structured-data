@@ -19,15 +19,15 @@ jobs:
       # index.json – dateModified setzen
       - name: Update dateModified in index.json
         run: |
-          DATE=$(date +%Y-%m-%d)
-          jq --arg d "$DATE" '.dateModified = $d' jsonld/index.json > jsonld/index.tmp
+          # Korrigiert: Nutzt jq's eingebaute Zeitfunktion 'now'
+          jq '.dateModified = (now | strftime("%Y-%m-%d"))' jsonld/index.json > jsonld/index.tmp
           mv jsonld/index.tmp jsonld/index.json
 
       # sitemap.json – generated setzen
       - name: Update generated date in sitemap.json
         run: |
-          DATE=$(date +%Y-%m-%d)
-          jq --arg d "$DATE" '.generated = $d' jsonld/sitemap.json > jsonld/sitemap.tmp
+          # Korrigiert: Nutzt jq's eingebaute Zeitfunktion 'now'
+          jq '.generated = (now | strftime("%Y-%m-%d"))' jsonld/sitemap.json > jsonld/sitemap.tmp
           mv jsonld/sitemap.tmp jsonld/sitemap.json
 
       # Minified index
