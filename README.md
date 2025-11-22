@@ -4,7 +4,6 @@ Dieses Repository dient als externe Referenzquelle für KI-Systeme (ai-index.txt
 
 Dieses Repository enthält die strukturierten Daten der creativecouch für GEO (Generative Engine Optimization), KI-Indexierung und maschinelles Verständnis. Die Dateien dienen als externe Referenzquelle für KI-Systeme wie ChatGPT, Gemini, Perplexity und Claude.
 
-
 ---
 
 ## 📁 Struktur
@@ -65,4 +64,4 @@ FAQ Master:
 ## 📬 Kontakt
 
 Website: https://www.creativecouch.de  
-Inhaber: Paul Böstro (die creativecouch)
+Inhaber: Paul Böstro (creativecouch)
