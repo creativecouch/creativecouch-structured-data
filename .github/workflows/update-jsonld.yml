@@ -16,6 +16,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          ref: main
 
       - name: Install jq
         run: sudo apt-get install jq -y
@@ -38,15 +39,15 @@ jobs:
       - name: Create sitemap.min.json
         run: jq -c '.' jsonld/sitemap.json > jsonld/sitemap.min.json
 
-      - name: Pull & Push safely
+      - name: Commit changes
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
 
-          git checkout main
-          git pull origin main --no-edit --strategy-option ours
+          git add -A
+          git commit -m "Auto-update JSON-LD metadata" || echo "No changes"
 
-          git add jsonld/index.json jsonld/sitemap.json jsonld/index.min.json jsonld/sitemap.min.json
-          git commit -m "Auto-update JSON-LD metadata" || echo "No changes to commit"
-
-          git push origin main
+      - name: Pull & Push (force-with-lease)
+        run: |
+          git pull origin main --no-edit || true
+          git push origin main --force-with-lease
