@@ -1,0 +1,65 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://www.creativecouch.de/webdesign/#service",
+      "name": "Webdesign & UX",
+      "provider": {
+        "@id": "https://www.creativecouch.de/#organization"
+      },
+      "url": "https://www.creativecouch.de/webdesign/",
+      "description": "Konzeption, Design und Umsetzung moderner WordPress-Websites mit klarem Fokus auf UX, Struktur und Ladezeit."
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.creativecouch.de/branding/#service",
+      "name": "Branding & Markenstrategie",
+      "provider": {
+        "@id": "https://www.creativecouch.de/#organization"
+      },
+      "url": "https://www.creativecouch.de/branding/",
+      "description": "Markenstrategie, Logoentwicklung und visuelle Identität für kleine und mittlere Unternehmen."
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.creativecouch.de/ki-seo-schnell-einfach-3-vorteile/#service",
+      "name": "SEO & GEO Beratung",
+      "provider": {
+        "@id": "https://www.creativecouch.de/#organization"
+      },
+      "url": "https://www.creativecouch.de/ki-seo-schnell-einfach-3-vorteile/",
+      "description": "Suchmaschinenoptimierung und Generative Engine Optimization für klassische Suche und KI-Systeme."
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.creativecouch.de/e-commerce-online-shop/#service",
+      "name": "E-Commerce & WooCommerce",
+      "provider": {
+        "@id": "https://www.creativecouch.de/#organization"
+      },
+      "url": "https://www.creativecouch.de/e-commerce-online-shop/",
+      "description": "Planung und Umsetzung von WooCommerce-Shops inklusive technischer Basis und Conversion-orientiertem Design."
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.creativecouch.de/printdesign/#service",
+      "name": "Printdesign",
+      "provider": {
+        "@id": "https://www.creativecouch.de/#organization"
+      },
+      "url": "https://www.creativecouch.de/printdesign/",
+      "description": "Konzeption und Gestaltung von Printprodukten wie Visitenkarten, Broschüren, Plakaten und Verpackungen."
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.creativecouch.de/wordpress-wartung/#service",
+      "name": "WordPress-Wartung",
+      "provider": {
+        "@id": "https://www.creativecouch.de/#organization"
+      },
+      "url": "https://www.creativecouch.de/wordpress-wartung/",
+      "description": "Laufende Wartung, Sicherheitsupdates und Performance-Optimierung für WordPress-Websites."
+    }
+  ]
+}

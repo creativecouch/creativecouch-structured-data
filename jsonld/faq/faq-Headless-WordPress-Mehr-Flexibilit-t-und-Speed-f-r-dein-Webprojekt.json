@@ -1,0 +1,84 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      "name": "Headless WordPress – Mehr Flexibilität und Speed für dein Webprojekt | Allgemein",
+      "inLanguage": "de",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Was ist Headless WordPress und wie funktioniert es?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Headless WordPress trennt das Backend (WordPress als Content-Management-System) vom Frontend (React, Vue oder Next.js). Die Inhalte werden über REST API oder WPGraphQL an externe Plattformen ausgespielt. Dadurch entsteht eine entkoppelte Architektur: WordPress verwaltet die Inhalte, während das Frontend völlig unabhängig entwickelt wird. Diese Trennung ermöglicht maximale Flexibilität bei Design und Performance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Welche Vorteile bietet Headless WordPress gegenüber klassischem WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Headless WordPress bietet extrem schnelle Ladezeiten durch moderne Frontend-Frameworks, maximale Flexibilität bei Design und User Experience sowie optimale Skalierbarkeit für große Projekte. Die Sicherheit ist höher, da der WordPress-Admin für Nutzer unsichtbar bleibt. Zusätzlich ermöglicht es Plattformunabhängigkeit - Sie können Apps, Websites und Intranet aus einer einzigen Quelle bespielen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Für welche Unternehmen eignet sich Headless WordPress am besten?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Headless WordPress eignet sich ideal für Unternehmen mit individuellen UX/UI-Anforderungen, Startups und KMUs mit dynamischen Webportalen sowie Projekte, bei denen Performance, Sicherheit und Skalierbarkeit entscheidend sind. Besonders Firmen, die Multichannel-Content über Website, App und Display ausspielen möchten, profitieren von der entkoppelten Architektur und der damit verbundenen Flexibilität."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Welche Nachteile hat Headless WordPress und wann sollte man darauf verzichten?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Headless WordPress bringt erhöhten Entwicklungsaufwand mit sich, da Backend und Frontend getrennt entwickelt werden müssen. SEO-Strategien werden komplexer und erfordern Server Side Rendering oder Static Site Generation. Die Wartung ist aufwendiger und benötigt spezialisierte Hosting-Lösungen wie Netlify oder Vercel. Für einfache Websites oder bei begrenztem Budget kann klassisches WordPress die bessere Wahl sein."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie funktioniert SEO bei Headless WordPress richtig?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SEO bei Headless WordPress erfordert Server Side Rendering (SSR) oder Static Site Generation (SSG). Meta-Tags und Open Graph Tags müssen manuell integriert werden. XML-Sitemaps sollten aktuell gehalten und strukturierte Daten gepflegt werden. SSR rendert Seiten bei jedem Aufruf neu (ideal für dynamische Inhalte), während SSG Seiten einmalig statisch erzeugt (optimal für stabile Inhalte). Eine Kombination beider Methoden ist meist die beste Lösung."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Welche Technologien werden bei Headless WordPress eingesetzt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Die wichtigsten Frontend-Frameworks sind React.js, Vue.js, Next.js und Nuxt.js. Als APIs kommen WordPress REST API und WPGraphQL zum Einsatz. Hosting erfolgt über Plattformen wie Vercel, Netlify oder AWS. Next.js bietet beispielsweise eine perfekte Kombination aus Geschwindigkeit und SEO-Freundlichkeit. Diese Technologien ermöglichen moderne, schnelle und skalierbare Webanwendungen mit optimaler User Experience."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ist Headless WordPress sicher und wie unterscheidet sich die Sicherheit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Headless WordPress bietet höhere Sicherheit, da der WordPress-Admin-Bereich für Website-Besucher komplett unsichtbar ist. Die Trennung von Backend und Frontend reduziert Angriffsflächen erheblich. Potenzielle Sicherheitslücken im Frontend betreffen nicht das Content-Management-System. Zusätzlich können Frontend und Backend auf verschiedenen Servern gehostet werden, was die Sicherheitsarchitektur weiter stärkt und Ausfallsicherheit erhöht."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was ist der Unterschied zwischen REST API und GraphQL bei Headless WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "REST API ist die standardmäßige Programmierschnittstelle von WordPress, um Inhalte maschinenlesbar bereitzustellen. GraphQL (WPGraphQL) ist eine flexible Abfragesprache für APIs, die gezielte Datenabfragen ermöglicht. Während REST API alle verfügbaren Daten überträgt, können Sie mit GraphQL nur die benötigten Informationen abrufen. Das reduziert Datenübertragung und verbessert die Performance erheblich."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wann lohnt sich der Umstieg von klassischem WordPress auf Headless WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Der Umstieg lohnt sich bei hohen Performance-Anforderungen, individuellen Design-Wünschen oder komplexen User Interfaces. Wenn Sie Inhalte auf mehreren Plattformen (Website, App, Display) ausspielen möchten, ist Headless ideal. Auch bei Skalierungsanforderungen oder besonderen Sicherheitsansprüchen bietet die entkoppelte Architektur Vorteile. Für einfache Websites oder bei begrenzten Entwicklungsressourcen reicht klassisches WordPress oft aus."
+          }
+        }
+      ]
+    }
+  ]
+}
