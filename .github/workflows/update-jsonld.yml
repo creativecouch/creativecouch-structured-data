@@ -3,7 +3,7 @@ name: Update JSON-LD Data Layer
 on:
   schedule:
     - cron: "0 3 * * *"   # jeden Tag um 03:00 Uhr
-  workflow_dispatch:      # manuell auslösbar
+  workflow_dispatch:       # manuell auslösbar
 
 jobs:
   update-jsonld:
@@ -16,15 +16,16 @@ jobs:
       - name: Install jq
         run: sudo apt-get install jq -y
 
-- name: Update dateModified in index.json
-  run: |
-    CURRENT_DATE=$(date +"%Y-%m-%d")
-    jq --arg d "$CURRENT_DATE" '.dateModified = $d' jsonld/index.json > jsonld/index.tmp
-    mv jsonld/index.tmp jsonld/index.json
+      - name: Update dateModified in index.json
+        run: |
+          CURRENT_DATE=$(date +"%Y-%m-%d")
+          jq --arg d "$CURRENT_DATE" '.dateModified = $d' jsonld/index.json > jsonld/index.tmp
+          mv jsonld/index.tmp jsonld/index.json
 
       - name: Update generated date in sitemap.json
         run: |
-          jq '.generated = now | strftime("%Y-%m-%d")' jsonld/sitemap.json > jsonld/sitemap.tmp
+          CURRENT_DATE=$(date +"%Y-%m-%d")
+          jq --arg d "$CURRENT_DATE" '.generated = $d' jsonld/sitemap.json > jsonld/sitemap.tmp
           mv jsonld/sitemap.tmp jsonld/sitemap.json
 
       - name: Create minified index.min.json
@@ -37,10 +38,13 @@ jobs:
 
       - name: Commit changes
         run: |
-          git config --local user.name "github-actions"
-          git config --local user.email "github-actions@github.com"
-          git add jsonld/index.json jsonld/index.min.json jsonld/sitemap.json jsonld/sitemap.min.json
-          git commit -m "Auto-update JSON-LD data layer" || echo "No changes to commit"
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add jsonld/index.json
+          git add jsonld/sitemap.json
+          git add jsonld/index.min.json
+          git add jsonld/sitemap.min.json
+          git commit -m "Auto-update JSON-LD layer" || echo "No changes to commit"
 
       - name: Push changes
         run: |
