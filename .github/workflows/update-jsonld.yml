@@ -2,8 +2,8 @@ name: Update JSON-LD Data Layer
 
 on:
   schedule:
-    - cron: "0 3 * * *"   # jeden Tag um 03:00 Uhr
-  workflow_dispatch:       # manuell auslösbar
+    - cron: "0 3 * * *"
+  workflow_dispatch:
 
 jobs:
   update-jsonld:
@@ -29,23 +29,19 @@ jobs:
           mv jsonld/sitemap.tmp jsonld/sitemap.json
 
       - name: Create minified index.min.json
-        run: |
-          jq -c '.' jsonld/index.json > jsonld/index.min.json
+        run: jq -c '.' jsonld/index.json > jsonld/index.min.json
 
       - name: Create minified sitemap.min.json
-        run: |
-          jq -c '.' jsonld/sitemap.json > jsonld/sitemap.min.json
+        run: jq -c '.' jsonld/sitemap.json > jsonld/sitemap.min.json
 
       - name: Commit changes
         run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
-          git add jsonld/index.json
-          git add jsonld/sitemap.json
-          git add jsonld/index.min.json
-          git add jsonld/sitemap.min.json
-          git commit -m "Auto-update JSON-LD layer" || echo "No changes to commit"
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Auto-update JSON-LD dates" || echo "No changes to commit"
 
       - name: Push changes
-        run: |
-          git push
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
