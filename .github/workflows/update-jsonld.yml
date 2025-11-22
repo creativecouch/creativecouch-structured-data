@@ -16,38 +16,35 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          ref: main
+          ref: main   # WICHTIG – sonst kein Push möglich
 
       - name: Install jq
         run: sudo apt-get install jq -y
 
       - name: Update dateModified in index.json
         run: |
-          DATE=$(date +%Y-%m-%d)
-          jq --arg d "$DATE" '.dateModified = $d' jsonld/index.json > jsonld/index.tmp
+          jq '.dateModified = (now | strftime("%Y-%m-%d"))' jsonld/index.json > jsonld/index.tmp
           mv jsonld/index.tmp jsonld/index.json
 
-      - name: Update generated in sitemap.json
+      - name: Update generated date in sitemap.json
         run: |
-          DATE=$(date +%Y-%m-%d)
-          jq --arg d "$DATE" '.generated = $d' jsonld/sitemap.json > jsonld/sitemap.tmp
+          jq '.generated = (now | strftime("%Y-%m-%d"))' jsonld/sitemap.json > jsonld/sitemap.tmp
           mv jsonld/sitemap.tmp jsonld/sitemap.json
 
-      - name: Create index.min.json
+      - name: Create minified index.min.json
         run: jq -c '.' jsonld/index.json > jsonld/index.min.json
 
-      - name: Create sitemap.min.json
+      - name: Create minified sitemap.min.json
         run: jq -c '.' jsonld/sitemap.json > jsonld/sitemap.min.json
 
       - name: Commit changes
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
+          git add jsonld/index.json jsonld/sitemap.json jsonld/index.min.json jsonld/sitemap.min.json
+          git commit -m "Auto-update JSON-LD metadata" || echo "No changes to commit"
 
-          git add -A
-          git commit -m "Auto-update JSON-LD metadata" || echo "No changes"
-
-      - name: Pull & Push (force-with-lease)
+      - name: Push changes
         run: |
-          git pull origin main --no-edit || true
-          git push origin main --force-with-lease
+          git pull --rebase origin main
+          git push origin main
