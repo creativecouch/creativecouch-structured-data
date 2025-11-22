@@ -1,17 +1,63 @@
 {
-  "folder": "jsonld",
-  "description": "Übersicht aller JSON-LD Dateien im Data-Layer der creativecouch.",
-  "files": [
-    "blogposts.json",
-    "categories.json",
-    "localbusiness.json",
-    "organization.json",
-    "pages.json",
-    "services.json",
-    "tags.json",
-    "sitemap.json"
-  ],
-  "subfolders": [
-    "faq"
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "creativecouch JSON-LD Data Layer",
+  "description": "Zentrale JSON-LD Datenbasis der creativecouch für GEO, KI-Indexierung und maschinelles Verständnis. Enthält Blogposts, Services, Seiten, Kategorien, Tags und FAQ-Inhalte.",
+  "url": "https://creativecouch.github.io/creativecouch-structured-data/",
+  "creator": {
+    "@type": "Organization",
+    "name": "creativecouch",
+    "url": "https://www.creativecouch.de",
+    "address": "Butzbach, Hessen, Deutschland"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "blogposts.json",
+      "contentUrl": "https://creativecouch.github.io/creativecouch-structured-data/jsonld/blogposts.json",
+      "encodingFormat": "application/json"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "pages.json",
+      "contentUrl": "https://creativecouch.github.io/creativecouch-structured-data/jsonld/pages.json",
+      "encodingFormat": "application/json"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "services.json",
+      "contentUrl": "https://creativecouch.github.io/creativecouch-structured-data/jsonld/services.json",
+      "encodingFormat": "application/json"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "categories.json",
+      "contentUrl": "https://creativecouch.github.io/creativecouch-structured-data/jsonld/categories.json",
+      "encodingFormat": "application/json"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "tags.json",
+      "contentUrl": "https://creativecouch.github.io/creativecouch-structured-data/jsonld/tags.json",
+      "encodingFormat": "application/json"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "organization.json",
+      "contentUrl": "https://creativecouch.github.io/creativecouch-structured-data/jsonld/organization.json",
+      "encodingFormat": "application/json"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "localbusiness.json",
+      "contentUrl": "https://creativecouch.github.io/creativecouch-structured-data/jsonld/localbusiness.json",
+      "encodingFormat": "application/json"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "faq-master.json",
+      "contentUrl": "https://creativecouch.github.io/creativecouch-structured-data/jsonld/faq/faq-master.json",
+      "encodingFormat": "application/json"
+    }
   ]
 }
