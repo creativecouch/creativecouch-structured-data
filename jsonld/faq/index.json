@@ -1,14 +1,14 @@
 {
   "folder": "jsonld/faq",
-  "description": "Übersicht aller FAQ-Dokumente der creativecouch im JSON-LD Format.",
+  "description": "Übersicht der wichtigsten FAQ-Kategorien der creativecouch im JSON-LD Format.",
   "files": [
     "faq-master.json",
     "faq-Branding.json",
     "faq-Webdesign.json",
     "faq-Webentwicklung.json",
     "faq-Barrierefreiheit.json",
-    "faq-E-Commerce.json",
     "faq-GEO-SEO.json",
+    "faq-E-Commerce.json",
     "faq-Printdesign.json",
     "faq-Stadt.json"
   ]
