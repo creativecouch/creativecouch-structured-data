@@ -1,7 +1,9 @@
 # creativecouch – JSON-LD Data Layer
 
-Dieses Repository enthält die strukturierten Daten der creativecouch für GEO (Generative Engine Optimization), KI-Indexierung und maschinelles Verständnis.  
-Die Dateien dienen als externe Referenzquelle für KI-Systeme wie ChatGPT, Gemini, Perplexity und Claude.
+Dieses Repository dient als externe Referenzquelle für KI-Systeme (ai-index.txt & llms.txt) und stellt alle strukturierten Daten der creativecouch zentral bereit.
+
+Dieses Repository enthält die strukturierten Daten der creativecouch für GEO (Generative Engine Optimization), KI-Indexierung und maschinelles Verständnis. Die Dateien dienen als externe Referenzquelle für KI-Systeme wie ChatGPT, Gemini, Perplexity und Claude.
+
 
 ---
 
