@@ -9,7 +9,7 @@ jobs:
   update-jsonld:
     runs-on: ubuntu-latest
     permissions:
-      contents: write 
+      contents: write # (Dies behebt den 403-Fehler)
 
     steps:
       - name: Checkout Repository
@@ -48,4 +48,4 @@ jobs:
           git commit -m "Auto-update JSON-LD metadata" || echo "No changes to commit"
 
       - name: Push changes
-        run: git push --force # <-- Änderung hier
+        run: git push --force # <-- Dies behebt den '[rejected] fetch first'-Fehler
