@@ -1,0 +1,15 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "CollectionPage", "url": "https://www.creativecouch.de/kategorie/agenturwahl-projekte/", "name": "Agenturwahl & Projekte" },
+    { "@type": "CollectionPage", "url": "https://www.creativecouch.de/kategorie/branding-strategie/", "name": "Branding & Strategie" },
+    { "@type": "CollectionPage", "url": "https://www.creativecouch.de/kategorie/datenschutz-recht/", "name": "Datenschutz & Recht" },
+    { "@type": "CollectionPage", "url": "https://www.creativecouch.de/kategorie/e-commerce/", "name": "E-Commerce" },
+    { "@type": "CollectionPage", "url": "https://www.creativecouch.de/kategorie/ki-automatisierung/", "name": "KI & Automatisierung" },
+    { "@type": "CollectionPage", "url": "https://www.creativecouch.de/kategorie/printmaterial/", "name": "Printmaterial" },
+    { "@type": "CollectionPage", "url": "https://www.creativecouch.de/kategorie/seo-content/", "name": "SEO & Content" },
+    { "@type": "CollectionPage", "url": "https://www.creativecouch.de/kategorie/webdesign-ux/", "name": "Webdesign & UX" },
+    { "@type": "CollectionPage", "url": "https://www.creativecouch.de/kategorie/wordpress-seo/", "name": "WordPress SEO" },
+    { "@type": "CollectionPage", "url": "https://www.creativecouch.de/kategorie/wordpress-wartung/", "name": "WordPress Wartung" }
+  ]
+}
