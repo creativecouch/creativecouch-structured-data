@@ -16,10 +16,11 @@ jobs:
       - name: Install jq
         run: sudo apt-get install jq -y
 
-      - name: Update dateModified in index.json
-        run: |
-          jq '.dateModified = now | strftime("%Y-%m-%d")' jsonld/index.json > jsonld/index.tmp
-          mv jsonld/index.tmp jsonld/index.json
+- name: Update dateModified in index.json
+  run: |
+    CURRENT_DATE=$(date +"%Y-%m-%d")
+    jq --arg d "$CURRENT_DATE" '.dateModified = $d' jsonld/index.json > jsonld/index.tmp
+    mv jsonld/index.tmp jsonld/index.json
 
       - name: Update generated date in sitemap.json
         run: |
