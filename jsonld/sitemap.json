@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "generated": "2025-11-22",
+  "description": "Sitemap der wichtigsten JSON-LD Datenquellen der creativecouch für KI-Indexierung, GEO und semantisches Crawling.",
+  "jsonld": [
+    "/jsonld/blogposts.json",
+    "/jsonld/categories.json",
+    "/jsonld/localbusiness.json",
+    "/jsonld/organization.json",
+    "/jsonld/pages.json",
+    "/jsonld/services.json",
+    "/jsonld/tags.json"
+  ],
+  "faq": [
+    "/jsonld/faq/faq-master.json"
+  ]
+}
