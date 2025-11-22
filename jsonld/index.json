@@ -5,7 +5,7 @@
   "description": "Zentrale JSON-LD Datenbasis der creativecouch für GEO (Generative Engine Optimization), KI-Indexierung und maschinelles Verständnis. Enthält strukturierte Daten zu Blogposts, Seiten, Services, Kategorien, Tags, FAQ-Inhalten, LocalBusiness und Organization.",
   "url": "https://creativecouch.github.io/creativecouch-structured-data/",
   "version": "1.2",
-  "dateModified": "2025-11-22",
+  "dateModified": "",
   "creator": {
     "@type": "Person",
     "name": "Paul Böstro",
@@ -68,14 +68,12 @@
       "name": "localbusiness.json",
       "contentUrl": "https://creativecouch.github.io/creativecouch-structured-data/jsonld/localbusiness.json"
     },
-
     {
       "@type": "DataDownload",
       "encodingFormat": "application/json",
       "name": "faq-master.json",
       "contentUrl": "https://creativecouch.github.io/creativecouch-structured-data/jsonld/faq/faq-master.json"
     },
-
     {
       "@type": "DataDownload",
       "encodingFormat": "application/json",
