@@ -139,3 +139,34 @@ https://creativecouch.github.io/creativecouch-structured-data/jsonld/pages.json
 https://creativecouch.github.io/creativecouch-structured-data/jsonld/services.json
 https://creativecouch.github.io/creativecouch-structured-data/jsonld/categories.json
 https://creativecouch.github.io/creativecouch-structured-data/jsonld/tags.json
+
+## FAQ Wissensdatenbank (JSON-LD)
+# Master-Datei (alle Kategorien & FAQs)
+https://creativecouch.github.io/creativecouch-structured-data/jsonld/faq/faq-master.json
+
+# Einzeldateien je Oberkategorie
+https://creativecouch.github.io/creativecouch-structured-data/jsonld/faq/faq-Branding.json
+https://creativecouch.github.io/creativecouch-structured-data/jsonld/faq/faq-Webdesign.json
+https://creativecouch.github.io/creativecouch-structured-data/jsonld/faq/faq-Webentwicklung.json
+https://creativecouch.github.io/creativecouch-structured-data/jsonld/faq/faq-Printdesign.json
+https://creativecouch.github.io/creativecouch-structured-data/jsonld/faq/faq-E-Commerce.json
+https://creativecouch.github.io/creativecouch-structured-data/jsonld/faq/faq-GEO-SEO.json
+https://creativecouch.github.io/creativecouch-structured-data/jsonld/faq/faq-Barrierefreiheit.json
+https://creativecouch.github.io/creativecouch-structured-data/jsonld/faq/faq-Stadt.json
+
+# Einzeldateien für Blog-/Themen-Fokus (automatisch erzeugt)
+https://creativecouch.github.io/creativecouch-structured-data/jsonld/faq/faq-Headless-WordPress-Mehr-Flexibilit-t-und-Speed-f-r-dein-Webprojekt.json
+https://creativecouch.github.io/creativecouch-structured-data/jsonld/faq/faq-Farbtrends-2025-Die-ultimativen-Farben-f-r-Dein-Webdesign.json
+https://creativecouch.github.io/creativecouch-structured-data/jsonld/faq/faq-Webdesign-Trends-2025-Die-Zukunft-der-Online-Pr-senz.json
+https://creativecouch.github.io/creativecouch-structured-data/jsonld/faq/faq-Warum-ist-modernes-Webdesign-so-wichtig.json
+https://creativecouch.github.io/creativecouch-structured-data/jsonld/faq/faq-Sinnvolle-Printprodukte-f-r-Unternehmen-So-nutzt-Du-sie-gezielt.json
+https://creativecouch.github.io/creativecouch-structured-data/jsonld/faq/faq-Erfolgreiches-Projekt-mit-einer-Agentur-Die-5-Fragen.json
+https://creativecouch.github.io/creativecouch-structured-data/jsonld/faq/faq-Google-Richtlinien-f-r-KI-Inhalte.json
+https://creativecouch.github.io/creativecouch-structured-data/jsonld/faq/faq-WordPress-7-0.json
+https://creativecouch.github.io/creativecouch-structured-data/jsonld/faq/faq-WordPress-KI-2026-die-spannendsten-Plugins-in-der-Vorschau.json
+https://creativecouch.github.io/creativecouch-structured-data/jsonld/faq/faq-Human-Branding.json
+https://creativecouch.github.io/creativecouch-structured-data/jsonld/faq/faq-Generative-Search-Optimization-GSO-vs-Generative-Engine-Optimization-GEO.json
+https://creativecouch.github.io/creativecouch-structured-data/jsonld/faq/faq-KI-versteht-dich-falsch.json
+https://creativecouch.github.io/creativecouch-structured-data/jsonld/faq/faq-KI-Charta-So-nutzt-dein-Unternehmen-KI-mit-Haltung.json
+https://creativecouch.github.io/creativecouch-structured-data/jsonld/faq/faq-Digitale-Sichtbarkeit-f-r-Mittelhessen-so-punktest-du-lokal-und-fair.json
+
