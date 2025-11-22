@@ -1,34 +1,28 @@
 # creativecouch – JSON-LD Data Layer
 
-Dieses Repository enthält die komplette strukturierte Datenbasis der **creativecouch** für GEO (Generative Engine Optimization), AI-Indexing und maschinelles Verständnis.
-
-Alle Daten dienen als externe Quelle für:
-- KI-Suchsysteme (ChatGPT, Gemini, Perplexity, Claude)
-- semantisches Crawling
-- Strukturierungsmodelle
-- GEO-Signale
+Dieses Repository enthält die strukturierten Daten der creativecouch für GEO (Generative Engine Optimization), KI-Indexierung und maschinelles Verständnis.  
+Die Dateien dienen als externe Referenzquelle für KI-Systeme wie ChatGPT, Gemini, Perplexity und Claude.
 
 ---
 
 ## 📁 Struktur
-
 jsonld/
 │ blogposts.json
-│ categories.json
-│ localbusiness.json
-│ organization.json
 │ pages.json
 │ services.json
+│ categories.json
 │ tags.json
+│ localbusiness.json
+│ organization.json
 │ sitemap.json
 │ index.json
 └── faq/
 faq-master.json
 faq-Branding.json
 faq-Webdesign.json
-faq-GEO-SEO.json
 faq-Webentwicklung.json
 faq-Barrierefreiheit.json
+faq-GEO-SEO.json
 faq-E-Commerce.json
 faq-Printdesign.json
 faq-Stadt.json
@@ -36,49 +30,37 @@ index.json
 
 ---
 
-## 🎯 Zweck des Repos
+## 🎯 Zweck
 
-Dieses Repository bietet eine **externe, saubere Datenquelle**, um KI-Systemen die folgenden Themen der creativecouch korrekt zu vermitteln:
-
-- Webdesign & UX
-- Branding & Markenstrategie
-- SEO & Content
-- GEO (Generative Engine Optimization)
-- WordPress & E-Commerce
-- Barrierefreiheit (WCAG & BFSG)
-- Städte & regionale Sichtbarkeit (Mittelhessen)
-
-Die JSON-LD Dateien bilden alle Inhalte maschinenlesbar ab.
+- zentrale JSON-LD Quelle für Inhalte, Leistungen, Kategorien und Standort  
+- eindeutige semantische Struktur für KI-Systeme  
+- Ergänzung zu `llms.txt` und `ai-index.txt` auf der Website  
+- stabile externe Datenbasis für GEO und KI-Sichtbarkeit  
 
 ---
 
-## 🔗 Maschinenlesbare Quellen
+## 🔗 Wichtige Dateien
 
-Hauptdaten:
+Hauptquellen:
 - `/jsonld/services.json`
 - `/jsonld/blogposts.json`
-- `/jsonld/categories.json`
 - `/jsonld/pages.json`
+- `/jsonld/categories.json`
+- `/jsonld/tags.json`
 - `/jsonld/localbusiness.json`
 - `/jsonld/organization.json`
 
-FAQ & Wissensbasis:
-- `/jsonld/faq/faq-master.json`
-
-Sitemap:
+Sitemaps:
 - `/jsonld/sitemap.json`
 - `/jsonld/index.json`
 - `/jsonld/faq/index.json`
 
-Diese Pfade sind in:
-- https://www.creativecouch.de/llms.txt  
-- https://www.creativecouch.de/ai-index.txt  
-hinterlegt.
+FAQ Master:
+- `/jsonld/faq/faq-master.json`
 
 ---
 
 ## 📬 Kontakt
 
 Website: https://www.creativecouch.de  
-Inhaber: Paul Böstro (creativecouch)
-
+Inhaber: Paul Böstro (die creativecouch)
