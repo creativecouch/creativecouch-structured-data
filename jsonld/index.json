@@ -1,0 +1,17 @@
+{
+  "folder": "jsonld",
+  "description": "Übersicht aller JSON-LD Dateien im Data-Layer der creativecouch.",
+  "files": [
+    "blogposts.json",
+    "categories.json",
+    "localbusiness.json",
+    "organization.json",
+    "pages.json",
+    "services.json",
+    "tags.json",
+    "sitemap.json"
+  ],
+  "subfolders": [
+    "faq"
+  ]
+}
