@@ -16,32 +16,36 @@ jobs:
       - name: Install jq
         run: sudo apt-get install jq -y
 
+      # index.json – dateModified setzen
       - name: Update dateModified in index.json
         run: |
-          CURRENT_DATE=$(date +"%Y-%m-%d")
-          jq --arg d "$CURRENT_DATE" '.dateModified = $d' jsonld/index.json > jsonld/index.tmp
+          DATE=$(date +%Y-%m-%d)
+          jq --arg d "$DATE" '.dateModified = $d' jsonld/index.json > jsonld/index.tmp
           mv jsonld/index.tmp jsonld/index.json
 
+      # sitemap.json – generated setzen
       - name: Update generated date in sitemap.json
         run: |
-          CURRENT_DATE=$(date +"%Y-%m-%d")
-          jq --arg d "$CURRENT_DATE" '.generated = $d' jsonld/sitemap.json > jsonld/sitemap.tmp
+          DATE=$(date +%Y-%m-%d)
+          jq --arg d "$DATE" '.generated = $d' jsonld/sitemap.json > jsonld/sitemap.tmp
           mv jsonld/sitemap.tmp jsonld/sitemap.json
 
+      # Minified index
       - name: Create minified index.min.json
-        run: jq -c '.' jsonld/index.json > jsonld/index.min.json
+        run: |
+          jq -c '.' jsonld/index.json > jsonld/index.min.json
 
+      # Minified sitemap
       - name: Create minified sitemap.min.json
-        run: jq -c '.' jsonld/sitemap.json > jsonld/sitemap.min.json
+        run: |
+          jq -c '.' jsonld/sitemap.json > jsonld/sitemap.min.json
 
       - name: Commit changes
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add .
-          git commit -m "Auto-update JSON-LD dates" || echo "No changes to commit"
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add jsonld/index.json jsonld/sitemap.json jsonld/index.min.json jsonld/sitemap.min.json
+          git commit -m "Auto-update JSON-LD metadata" || echo "No changes to commit"
 
       - name: Push changes
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+        run: git push
