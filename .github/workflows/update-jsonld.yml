@@ -9,7 +9,7 @@ jobs:
   update-jsonld:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Diese Berechtigung ist notwendig, um per 'git push' Commits zu pushen
+      contents: write 
 
     steps:
       - name: Checkout Repository
@@ -48,4 +48,4 @@ jobs:
           git commit -m "Auto-update JSON-LD metadata" || echo "No changes to commit"
 
       - name: Push changes
-        run: git push
+        run: git push --force # <-- Änderung hier
