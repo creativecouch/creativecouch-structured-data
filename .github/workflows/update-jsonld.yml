@@ -16,7 +16,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          ref: main   # WICHTIG – sonst kein Push möglich
 
       - name: Install jq
         run: sudo apt-get install jq -y
@@ -44,7 +43,7 @@ jobs:
           git add jsonld/index.json jsonld/sitemap.json jsonld/index.min.json jsonld/sitemap.min.json
           git commit -m "Auto-update JSON-LD metadata" || echo "No changes to commit"
 
-      - name: Push changes
+      - name: Pull & Push (safe rebase)
         run: |
-          git pull --rebase origin main
-          git push origin main
+          git pull --rebase --strategy-option ours
+          git push --force-with-lease
