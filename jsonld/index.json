@@ -5,7 +5,7 @@
   "description": "Zentrale JSON-LD Datenbasis der creativecouch für GEO (Generative Engine Optimization), KI-Indexierung und maschinelles Verständnis. Enthält strukturierte Daten zu Blogposts, Seiten, Services, Kategorien, Tags, FAQ-Inhalten, LocalBusiness und Organization.",
   "url": "https://creativecouch.github.io/creativecouch-structured-data/",
   "version": "1.2",
-  "dateModified": "",
+  "dateModified": "2025-11-23",
   "creator": {
     "@type": "Person",
     "name": "Paul Böstro",
