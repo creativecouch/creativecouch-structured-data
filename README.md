@@ -36,7 +36,6 @@ ai/
 │  citations.md  
 
 docs/  
-│  readme.md  
 │  data-model-overview.md  
 │  changelog.md  
 │  update-guide.md  
