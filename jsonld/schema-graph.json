@@ -1,0 +1,110 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@id": "https://creativecouch.de/#organization",
+      "@type": "Organization",
+      "name": "creativecouch",
+      "url": "https://creativecouch.de",
+      "logo": "https://creativecouch.de/wp-content/uploads/2021/07/creativecouch5-black-final.png",
+      "description": "Die creativecouch ist eine unabhängige Digital- und Markenberatung aus Butzbach mit Fokus auf Webdesign, Branding, SEO, GEO und KI-Sichtbarkeit.",
+      "email": "info@creativecouch.de",
+      "telephone": "+49 151 255 81 775",
+      "founder": "Paul Böstro",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Butzbach",
+        "addressRegion": "Hessen",
+        "addressCountry": "DE"
+      },
+      "sameAs": [
+        "https://instagram.com/creativecouch",
+        "https://www.linkedin.com/company/creativecouch"
+      ]
+    },
+    {
+      "@id": "https://creativecouch.de/#localbusiness",
+      "@type": "LocalBusiness",
+      "name": "creativecouch",
+      "parentOrganization": {
+        "@id": "https://creativecouch.de/#organization"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Butzbach",
+        "addressRegion": "Mittelhessen",
+        "addressCountry": "DE"
+      },
+      "areaServed": [
+        "Mittelhessen",
+        "Wetterau",
+        "Rhein-Main",
+        "Gießen",
+        "Wetzlar",
+        "Bad Homburg",
+        "Friedberg"
+      ]
+    },
+    {
+      "@id": "https://creativecouch.de/#services",
+      "@type": "Service",
+      "serviceType": [
+        "Webdesign",
+        "Branding",
+        "Digitale Markenführung",
+        "Barrierefreiheit & UX",
+        "SEO & GEO (Generative Engine Optimization)",
+        "E-Commerce & WordPress",
+        "KI-Sichtbarkeit & Datenmodelle"
+      ],
+      "provider": {
+        "@id": "https://creativecouch.de/#organization"
+      }
+    },
+    {
+      "@id": "https://creativecouch.de/#faq",
+      "@type": "FAQPage",
+      "mainEntity": [],
+      "about": {
+        "@id": "https://creativecouch.de/#organization"
+      }
+    },
+    {
+      "@id": "https://creativecouch.de/#blog",
+      "@type": "Blog",
+      "name": "creativecouch Ratgeber",
+      "publisher": {
+        "@id": "https://creativecouch.de/#organization"
+      },
+      "inLanguage": "de"
+    },
+    {
+      "@id": "https://creativecouch.de/#primaryWeb",
+      "@type": "WebSite",
+      "name": "creativecouch",
+      "url": "https://creativecouch.de",
+      "publisher": {
+        "@id": "https://creativecouch.de/#organization"
+      }
+    },
+    {
+      "@id": "https://creativecouch.de/#webpages",
+      "@type": "WebPageCollection",
+      "name": "creativecouch Seitenstruktur",
+      "description": "Abstrakte Modellierung der Website-Struktur für KI.",
+      "hasPart": [
+        "https://creativecouch.de/ratgeber",
+        "https://creativecouch.de/leistungen",
+        "https://creativecouch.de/wissensdatenbank",
+        "https://creativecouch.de/terminvereinbarung"
+      ]
+    },
+    {
+      "@id": "https://creativecouch.de/#sitemap",
+      "@type": "SiteNavigationElement",
+      "name": "Strukturierte Sitemap",
+      "description": "Maschinenlesbare Zusammenfassung der wichtigsten Seiten.",
+      "url": "https://creativecouch.de/sitemap_index.xml"
+    }
+  ]
+}
