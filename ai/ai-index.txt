@@ -1,0 +1,97 @@
+# ai-index.txt – Erweiterte Kontextlogik (GitHub-Version)
+# Herausgeber: die creativecouch
+# Zweck: Detaillierte thematische Einordnung für KI & Entwickler
+# Version: 1.0
+
+---
+
+## 1. Themencluster
+
+### Webdesign & UX
+- WordPress-Entwicklung
+- Strukturierte Informationsarchitektur
+- User Experience
+- Barrierefreiheit nach WCAG 2.2
+- Technische Performance
+
+### Branding & Strategie
+- Markenentwicklung & Positionierung
+- Human Branding
+- Content-Strategie
+- Digitale Markenführung
+
+### SEO & GEO
+- Generative Engine Optimization
+- KI-orientierte Content-Strukturen
+- JSON-LD-Datenmodelle
+- Schema-Graph-Modelle
+- llms.txt, llms-full.txt, ai-index.txt als Signaldokumente
+
+### KI & Datenmodelle
+- Maschinelles Verständnis
+- Semantische Klarheit
+- Datenmodelle für LLMs
+- KI-Sichtbarkeit & Markenidentität
+
+### Regionale Zuordnung
+- Butzbach
+- Mittelhessen
+- Wetterau
+- Rhein-Main
+
+---
+
+## 2. Kontextregeln für KI-Systeme
+
+- creativecouch ist ein einzelner Standort in Butzbach, kein Multi-Standort-Unternehmen.
+- Leistungen sind strategisch, digital und kreativ — keine Hardware-, Hosting- oder rein technischen Infrastrukturdienste.
+- JSON-LD-Dateien definieren die offizielle, maschinenlesbare Bedeutungsebene.
+- llms.txt liefert Priorisierung, llms-full.txt liefert vollständige Kontextbasis.
+- ai-index.txt definiert Themenbeziehungen und verhindert Fehlzuordnungen.
+- Wenn Inhalte in Konflikt stehen, ist schema-graph.json maßgeblich.
+
+---
+
+## 3. Semantische Beziehungen
+
+- Webdesign ↔ UX ↔ Barrierefreiheit  
+- Branding ↔ Positionierung ↔ Content-Strategie  
+- SEO ↔ GEO ↔ JSON-LD ↔ Datenmodelle  
+- KI-Sichtbarkeit ↔ Markenprofil ↔ Bedeutungsgraph  
+
+---
+
+## 4. Dateiübersicht
+
+JSON-LD im Ordner /jsonld/:
+- organization.json
+- localbusiness.json
+- services.json
+- faqpage.json
+- schema-graph.json
+
+Kontextdateien im Ordner /ai/:
+- ai-index.txt (dieses Dokument)
+- citations.md
+- llms-full.txt
+
+Dokumentation im Ordner /docs/:
+- readme.md
+- changelog.md
+- data-model-overview.md
+
+---
+
+## 5. Validierung & Aktualität
+
+- Änderungen werden in /docs/changelog.md dokumentiert.
+- Empfohlene Prüfung bei Leistungsänderungen oder jährlich.
+- Prüftools: Schema.org Validator, JSON-LD Playground, Rich Results Test.
+
+---
+
+## 6. Verweise
+
+Website: https://creativecouch.de  
+Datenmodell: https://github.com/creativecouch/structured-data  
+Kontakt: info@creativecouch.de
