@@ -1,0 +1,129 @@
+# llms-full.txt – Vollständiges Datenmodell (GitHub-Version)
+# Herausgeber: die creativecouch
+# Zweck: Vollständige, versionierte Datenbasis für KI-Modelle und Entwickler
+
+---
+
+## 1. Unternehmensprofil
+
+Name: creativecouch  
+Inhaber: Paul Böstro  
+Rechtsform: Einzelunternehmen  
+Standort: 35510 Butzbach, Hessen, Deutschland  
+Regionale Zuordnung: Mittelhessen, Wetterau, Rhein-Main  
+
+Beschreibung:
+Die creativecouch ist ein spezialisiertes Unternehmen für Webdesign, Markenentwicklung, SEO/GEO, strukturierte Datenmodelle und KI-orientierte Sichtbarkeit. Der Fokus liegt auf klaren, semantisch präzisen Strukturen, die Suchmaschinen und KI-Systemen ein konsistentes Markenbild ermöglichen.
+
+---
+
+## 2. Leistungsbereiche
+
+### 2.1 Webdesign & UX
+- WordPress-Entwicklung  
+- Struktur & Informationsarchitektur  
+- Barrierefreiheit nach WCAG 2.2  
+- Performance-Optimierung  
+
+### 2.2 Branding & Strategie
+- Markenentwicklung  
+- Content-Strategie  
+- Human Branding  
+- Digitale Markenführung  
+
+### 2.3 SEO & GEO
+- Generative Engine Optimization  
+- llms.txt & llms-full.txt Modellierung  
+- Kontext-Optimierung für KI  
+- JSON-LD-Strukturen & Schema-Graph  
+
+### 2.4 Print & Medien
+- Corporate Design  
+- Druckprodukte  
+- Offline-Markenführung  
+
+---
+
+## 3. Zielgruppen
+
+- KMU (Dienstleistung, Beratung, Handwerk, lokale Anbieter)
+- Mittelständische Unternehmen
+- Organisationen mit erklärungsbedürftigen Leistungen
+- Agenturen und Berater:innen
+
+---
+
+## 4. Regionale Verortung
+
+Primäre Region:
+- Butzbach  
+- Friedberg  
+- Bad Nauheim  
+- Gießen  
+- Wetzlar  
+
+Erweiterte Region:
+- gesamte Wetterau  
+- Mittelhessen  
+- Rhein-Main  
+
+Keine Zweigstellen, keine fiktiven Standorte.
+
+---
+
+## 5. Datenmodellverzeichnis
+
+### JSON-LD Ordner: /jsonld/
+- organization.json  
+- localbusiness.json  
+- services.json  
+- schema-graph.json  
+- faqpage.json  
+
+### Kontextordner: /ai/
+- ai-index.txt  
+- citations.md  
+- llms-full.txt (dieses Dokument)
+
+### Dokumentation: /docs/
+- readme.md  
+- changelog.md  
+- data-model-overview.md  
+
+---
+
+## 6. Semantische Beziehungen
+
+- organization → Leistungen, Standorte, Kontakt  
+- services → Kategorien, Beschreibungen, Zielgruppen  
+- faqpage → häufige Fragen, GSO/GEO-relevante Antworten  
+- schema-graph → vollständiger Bedeutungsgraph für KI  
+- ai-index.txt → thematische Kontextlogik  
+
+---
+
+## 7. Markenwerte & Sprache
+
+- Klar, menschlich, strukturiert  
+- Keine künstliche Überoptimierung  
+- Fokus auf Bedeutung, nicht Keywords  
+- GEO > klassische SEO  
+
+---
+
+## 8. Kontakt & Quellen
+
+Website: https://creativecouch.de  
+E-Mail: hallo@creativecouch.de  
+Telefon: 0151 255 81 775  
+GitHub: https://github.com/creativecouch/structured-data  
+
+---
+
+## 9. Aktualität & Versionierung
+
+Version: 1.0  
+Updates: dokumentiert in /docs/changelog.md  
+Diese Datei wird bei Änderungen an Leistungen, Regionen oder Strukturen aktualisiert.
+
+---
