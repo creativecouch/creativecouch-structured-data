@@ -6,6 +6,7 @@
   "url": "https://creativecouch.github.io/creativecouch-structured-data/",
   "version": "1.2",
   "dateModified": "2025-11-23",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
   "creator": {
     "@type": "Person",
     "name": "Paul Böstro",
@@ -67,6 +68,24 @@
       "encodingFormat": "application/json",
       "name": "localbusiness.json",
       "contentUrl": "https://creativecouch.github.io/creativecouch-structured-data/jsonld/localbusiness.json"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "application/json",
+      "name": "sitemap.json",
+      "contentUrl": "https://creativecouch.github.io/creativecouch-structured-data/jsonld/sitemap.json"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "application/json",
+      "name": "schema-graph.json",
+      "contentUrl": "https://creativecouch.github.io/creativecouch-structured-data/jsonld/schema-graph.json"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "application/json",
+      "name": "index.min.json",
+      "contentUrl": "https://creativecouch.github.io/creativecouch-structured-data/jsonld/index.min.json"
     },
     {
       "@type": "DataDownload",
